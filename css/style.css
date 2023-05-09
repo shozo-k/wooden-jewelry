@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+/*common*/
+body {
+	font-family: "Crimson Text", serif;
+	color: #222;
+}
+img {
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.site-title {
+	width: 110px;
+	line-height: 1px;
+	margin-right: 50px;
+}
+.site-title a {
+	display: block;
+}
+ul {
+	list-style: none;
+}
+.inner {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+.container {
+	max-width: 95%;
+	margin: 0 auto;
+}
+/*mainvisual*/
+#mainvisual {
+	margin: 50px auto 0; 
+	width: 90vw;
+}
+/*header*/
+header {
+	margin: 0 auto;
+	display: flex;
+	width: 90vw;
+	align-items: center;
+	margin: 0 auto 30px auto;
+	padding: 32px 0;
+}
+header ul {
+	display: flex;
+}
+header li {
+	margin-left: 30px;
+	font-size: 11px;
+}
+/*main*/
+.content {
+	display: flex;
+}
+section .image {
+	width: 50%;
+}
+section .text {
+	width: 50%;
+	margin: auto 0;
+	padding: 0 40px
+}
+section h2 {
+	font-weight: normal;
+	margin-bottom: 0.5rem;
+}
+section h3 {
+	margin-bottom: 1.5rem;
+	font-size: 16px
+}
+/*concept*/
+#concept {
+	margin-bottom: 50px;
+}
+/*work*/
+#work {
+	margin-bottom: 80px;
+}
+/*footer*/
+footer .inner {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+/*responsive*/
+@media screen and (max-width: 900px) {
+	/*mainvisual*/
+	#mainvisual {
+		margin: 0;
+		width: 100%;
+	}
+	#mainvisual img {
+		height: 50vh;
+		object-fit: cover;
+	}
+	/*main*/
+	.content {
+		flex-direction: column;
+	}
+	section .image {
+		width: 100%;
+	}
+	section .text {
+		width: 100%;
+		padding: 0;
+	}
+	section h2 {
+		font-size: 20px;
+	}
+	#work {
+		flex-direction: column-reverse;
+	}
